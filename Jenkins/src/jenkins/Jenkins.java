@@ -13,7 +13,7 @@ public class Jenkins {
     {
         Calculator calc = new Calculator();
         //assertEquals("4/0 = ", -999, calc.divide(4,0));
-        assertEquals("Hello World Jessica!\n", calc.getMessage(1));
+        assertEquals("Hello World!\n", calc.getMessage(1));
         //calc.divide(4,0 World);
     }
     
