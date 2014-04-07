@@ -1,7 +1,9 @@
+package jenkins;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class Main {
+public class Jenkins {
     /**
      * @param args the command line arguments
      */
