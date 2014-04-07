@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="USER-PC" name="CalcTest" skipped="0" tests="1" time="0.188" timestamp="2014-04-07T13:22:13">
+<testsuite errors="0" failures="0" hostname="USER-PC" name="CalcTest" skipped="0" tests="1" time="0.212" timestamp="2014-04-07T13:30:29">
   <properties>
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="javac.test.classpath" value="C:\Program Files\NetBeans 8.0\platform\modules\ext\junit-4.10.jar:build/classes:C:\Program Files\NetBeans 8.0\platform\modules\ext\junit-4.10.jar" />
@@ -38,7 +38,7 @@
     <property name="copylibs.rebase" value="true" />
     <property name="ant.file.type.Jenkins" value="file" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner CalcTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\USER\Desktop\Jenkins\build\test\results\TEST-CalcTest.xml crashfile=C:\Users\USER\Desktop\Jenkins\build\junitvmwatcher7060529918523226209.properties propsfile=C:\Users\USER\Desktop\Jenkins\build\junit2157139336974006055.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner CalcTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\USER\Desktop\Jenkins\build\test\results\TEST-CalcTest.xml crashfile=C:\Users\USER\Desktop\Jenkins\build\junitvmwatcher7912152532582697852.properties propsfile=C:\Users\USER\Desktop\Jenkins\build\junit7829622833834582273.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -298,7 +298,7 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="CalcTest" name="TestCalc" time="0.006" />
+  <testcase classname="CalcTest" name="TestCalc" time="0.008" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
