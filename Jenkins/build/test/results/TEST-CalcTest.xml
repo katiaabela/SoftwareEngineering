@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="USER-PC" name="CalcTest" skipped="0" tests="1" time="0.229" timestamp="2014-04-07T13:33:49">
+<testsuite errors="0" failures="1" hostname="USER-PC" name="CalcTest" skipped="0" tests="1" time="0.276" timestamp="2014-04-07T13:37:10">
   <properties>
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="javac.test.classpath" value="C:\Program Files\NetBeans 8.0\platform\modules\ext\junit-4.10.jar:build/classes:C:\Program Files\NetBeans 8.0\platform\modules\ext\junit-4.10.jar" />
@@ -38,7 +38,7 @@
     <property name="copylibs.rebase" value="true" />
     <property name="ant.file.type.Jenkins" value="file" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner CalcTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\USER\Desktop\Jenkins\build\test\results\TEST-CalcTest.xml crashfile=C:\Users\USER\Desktop\Jenkins\build\junitvmwatcher779118969080864657.properties propsfile=C:\Users\USER\Desktop\Jenkins\build\junit1484942000891460571.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner CalcTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\USER\Desktop\Jenkins\build\test\results\TEST-CalcTest.xml crashfile=C:\Users\USER\Desktop\Jenkins\build\junitvmwatcher2672615309705896001.properties propsfile=C:\Users\USER\Desktop\Jenkins\build\junit6474664977664781602.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -298,8 +298,8 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="CalcTest" name="TestCalc" time="0.026">
-    <failure message="expected:&lt;[JK]!&#xa;&gt; but was:&lt;[Hello World]!&#xa;&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[JK]!
+  <testcase classname="CalcTest" name="TestCalc" time="0.039">
+    <failure message="expected:&lt;[123456]!&#xa;&gt; but was:&lt;[Hello World]!&#xa;&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[123456]!
 &gt; but was:&lt;[Hello World]!
 &gt;
 	at CalcTest.TestCalc(CalcTest.java:44)
