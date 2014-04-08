@@ -40,7 +40,7 @@ public class CalcTest {
     public void TestCalc()
     {
         Calculator calc = new Calculator();
-        assertEquals(6, calc.add(3, 3));
+        assertEquals(6, calc.add(3, 1));
         //assertEquals("Hello World!\n", calc.getMessage(1));
         //calc.divide(4,1);
     }
