@@ -70,4 +70,13 @@
     nbproject/build-impl.xml file. 
 
     -->
+<target name="test" depends="init">
+        <junit printsummary="yes" haltonfailure="yes" fork="yes" forkmode="once">
+            <classpath path="lib/junit-4.10.jar"/>
+            <classpath path="build/test/classes"/>
+            <classpath path="build/classes"/>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+        </junit>
+    </target>
 </project>
