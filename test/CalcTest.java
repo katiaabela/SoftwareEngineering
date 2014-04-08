@@ -54,6 +54,6 @@ public class CalcTest {
     {
         Calculator calc = new Calculator();
         assertEquals("4/1 = ", 4, calc.divide(4,1));
-        //calc.divide(4,0);
+        //calc.divide(4,1);
     }*/
 }
