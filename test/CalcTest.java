@@ -33,7 +33,7 @@ public class CalcTest {
     {
         Calculator calc = new Calculator();
         //assertEquals("4/0 = ", -999, calc.divide(4,0));
-        assertEquals("12345!\n", calc.getMessage(1));
+        assertEquals("Hello World!\n", calc.getMessage(1));
         //calc.divide(4,0);
     }
     // TODO add test methods here.
