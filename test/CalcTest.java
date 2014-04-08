@@ -32,8 +32,8 @@ public class CalcTest {
     public void TestCalc()
     {
         Calculator calc = new Calculator();
-        //assertEquals("4/0 = ", -999, calc.divide(4,0));
-        assertEquals("1234!\n", calc.getMessage(1));
+        assertEquals(4, calc.divide(4,2));
+        //assertEquals("1234!\n", calc.getMessage(1));
         //calc.divide(4,0);
     }
     // TODO add test methods here.
