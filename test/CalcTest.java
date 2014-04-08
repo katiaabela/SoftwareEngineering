@@ -53,7 +53,7 @@ public class CalcTest {
     public void TestCalc()
     {
         Calculator calc = new Calculator();
-        assertEquals("4/0 = ", -999, calc.divide(4,0));
+        assertEquals("4/1 = ", 4, calc.divide(4,1));
         //calc.divide(4,0);
     }*/
 }
