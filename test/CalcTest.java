@@ -44,6 +44,9 @@ public class CalcTest {
 	assertEquals(2, calc.add(1, 1));
 	assertEquals(4, calc.add(2, 2));
 	assertEquals(8, calc.add(1, 1));
+
+        assertEquals(6, calc.add(3, 1));
+
         //assertEquals("Hello World!\n", calc.getMessage(1));
         //calc.divide(4,1);
     }
