@@ -41,7 +41,7 @@ public class CalcTest {
     {
         Calculator calc = new Calculator();
         assertEquals(6, calc.add(1, 1));
-        //assertEquals("Hello World!\n", calc.getMessage(1));
+        //assertEquals("Hello World!!\n", calc.getMessage(1));
         //calc.divide(4,1);
     }
     // TODO add test methods here.
