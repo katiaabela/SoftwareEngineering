@@ -40,9 +40,9 @@ public class CalcTest {
     public void TestCalc()
     {
         Calculator calc = new Calculator();
-        assertEquals("4/1 = ", 2, calc.divide(4,));
+        assertEquals("4/1 = ", 4, calc.divide(4, 1));
         //assertEquals("Hello World!\n", calc.getMessage(1));
-        calc.divide(4,2);
+        calc.divide(4,1);
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
