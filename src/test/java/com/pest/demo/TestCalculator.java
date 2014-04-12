@@ -26,7 +26,11 @@ public class TestCalculator {
 	
 	@Test
 	public void testSubtraction() {
+<<<<<<< HEAD
 		assertEquals(5, calc.divide(25, 5));
+=======
+		assertEquals(9, calc.divide(25, 5));
+>>>>>>> a051d8e6274fbe24af2e75dc7f3cbe51ed09076d
 	}
 
 }
