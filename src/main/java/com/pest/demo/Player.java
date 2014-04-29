@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 package sourcePackage;
 import java.util.*;
 
+=======
+package com.pest.demo;
+import java.util.*;
+
+
+>>>>>>> fdfd0e7ce1499dc6924b65a066cce5a0161104bd
 public class Player {
 	public Position position = new Position(); //current position
 	
