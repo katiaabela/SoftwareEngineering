@@ -31,7 +31,7 @@ public class GameTest {
 
 	}
 	
-	/*@Test
+	@Test
 	public void setNumPlayersTest(){
 		//true
 		assertEquals(true, Game.game.setNumPlayers(2));
@@ -214,35 +214,8 @@ public class GameTest {
 		Game.game.mapSize=5;
 		Game.game.mapType='s';
 		assertTrue(Game.game.createMap());
-	}*/
+	}
 	
-	@Test
-	public void startGameTest(){
-		
-	
-			
-			
-			Game.game.setNumPlayers(2);
-			Game.game.players[0]=new Player();
-			Game.game.players[1]=new Player();
-			Map.map.setSize(5,5);
-			Game.game.players[0].startPosition.x = 1;
-			Game.game.players[0].startPosition.y = 3;
-			Game.game.players[1].startPosition.x = 4;
-			Game.game.players[1].startPosition.y = 4;
-
-			  String input = "\n2\n5\ns\nn\nL\nL\nD\nU\nD\nL\nR\nU\n";
-			
-			System.setIn(new java.io.ByteArrayInputStream(input.getBytes()));
-			Game.game.sc = new Scanner(System.in);
-			Map.map.tiles[2][2]='c';
-			Map.map.tiles[1][3]='a';		
-			Map.map.tiles[4][4]='a';		
-			Map.map.tiles[1][2]='a';		
-			Map.map.tiles[4][3]='a';
-			
-			Game.game.startGame();
-		}
 	
 
 }
