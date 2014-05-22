@@ -1,16 +1,15 @@
 package sourcePackage;
+
 import java.util.*;
 
-public class Player {
+public class Player extends Observer{
 	public Position position = new Position(); //current position
 	
 	public Position startPosition = new Position();
 	
 	public List<Position> visitedPositions = new ArrayList<Position>();
-	
-	
-	
-	//int id;
+
+	int id;
 	
 	public boolean move(char direction){
 		Position updatePosition = new Position();
@@ -77,7 +76,7 @@ public class Player {
 	
 	//p - current position
 	public boolean setPosition(Position p){
-		if(p.x<0||p.y<0||p.x>=Game.game.map.size||p.y>=Game.game.map.size){
+		if(p.x<0||p.y<0||p.x>=Game.game.mapSize||p.y>=Game.game.mapSize){
 			return false;
 		} else if(Math.abs(position.x-p.x)>=2 || Math.abs(position.y-p.y)>=2){
 			return false;
@@ -89,14 +88,14 @@ public class Player {
 	
 	public Position setStartPosition() {
 		Random r = new Random();
-		int randomRow = r.nextInt(Game.game.map.size); 
-		int randomCol = r.nextInt(Game.game.map.size);
+		int randomRow = r.nextInt(Game.game.mapSize); 
+		int randomCol = r.nextInt(Game.game.mapSize);
 		
 		//check for duplicates
 		for(int i=0;i<Game.game.players.length;i++){
 			if(Game.game.players[i]!=null && Game.game.players[i].startPosition.x==randomRow && Game.game.players[i].startPosition.y==randomCol){
-				randomRow = r.nextInt(Game.game.map.size);
-				randomCol = r.nextInt(Game.game.map.size);
+				randomRow = r.nextInt(Game.game.mapSize);
+				randomCol = r.nextInt(Game.game.mapSize);
 			} else {
 				continue;
 			}
@@ -104,7 +103,7 @@ public class Player {
 		
 		//assign start positions
 		for(;;){
-			if(Game.game.map.tiles[randomRow][randomCol]=='a'){		
+			if(Map.tiles[randomRow][randomCol]=='a'){		
 				startPosition.x=randomRow;
 				startPosition.y=randomCol;
 				startPosition.visited=true;
@@ -114,12 +113,23 @@ public class Player {
 				System.out.println("Start: "+startPosition.x+" " +startPosition.y);
 				return startPosition;
 			} else {
-				randomRow = r.nextInt(Game.game.map.size);
-				randomCol = r.nextInt(Game.game.map.size);
+				randomRow = r.nextInt(Game.game.mapSize);
+				randomCol = r.nextInt(Game.game.mapSize);
 			}
 		}
 
 	}
 	
+	public void update(){
+		this.visitedPositions=getUpdate();
+	}
+	
+	public void setUpdate(List<Position> u){
+		this.visitedPositions=u;
+	}
+	
+	public List<Position> getUpdate(){
+		return visitedPositions;
+	}
 
 }
