@@ -16,8 +16,9 @@ public class MapCreator {
 			return new SafeMapCreator();
 		} else if (c=='h'){
 			return new HazardousMapCreator();	
-		}
+		} else {
 		return null;
+		}
 	}
 	
 	//default if no type is called

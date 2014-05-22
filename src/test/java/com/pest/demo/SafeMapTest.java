@@ -14,18 +14,8 @@ public class SafeMapTest {
 	@Test
 	public void testgetTileType()
 	{
-		Game.game.setNumPlayers(3);
-
-		Game.game.players[0]=new Player();
-		Game.game.players[1]=new Player();
-		Game.game.players[1]=new Player();
-		Map map= SafeMap.getInstance(5,5);
-		Map.setSize(5, 5);
-		Position p = new Position();
-		p.x = 0;
-		p.y=0;
-		Map.tiles[p.x][p.y]='b';
-		assertEquals(Map.getTileType(p.x,p.y), 'b');
+		char c = SafeMap.getTileType(Game.game.players[0].position.x, Game.game.players[0].position.y);
+		assertNotNull(c);
 	}
 	
 	@Test
@@ -64,5 +54,18 @@ public class SafeMapTest {
 		return count;
 	}
 
+	@Test
+	public void getInstanceTest(){
+		Map.map=null;
+		SafeMap.getInstance(5,5);
+		
+		assertTrue(Map.map instanceof SafeMap);
+		
+		Map.map = HazardousMap.getInstance(5,5);
+		SafeMap.getInstance(5,5);
+		assertTrue(Map.map instanceof SafeMap);
+
+
+	}
 
 }

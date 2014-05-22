@@ -216,6 +216,10 @@ public class GameTest {
 		assertTrue(Game.game.createMap());
 	}
 	
+	@Test
+	public void startGameTest(){
+		
+	}
 	
-
+	
 }

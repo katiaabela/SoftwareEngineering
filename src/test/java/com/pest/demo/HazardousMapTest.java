@@ -1,8 +1,6 @@
 package testPackage;
-import sourcePackage.Map;
-import sourcePackage.Game;
-import sourcePackage.Player;
-import sourcePackage.Position;
+import sourcePackage.*;
+
 
 import org.junit.Test;
 
@@ -17,21 +15,8 @@ public class HazardousMapTest {
 	@Test
 	public void testgetTileType()
 	{
-		Game.game.setNumPlayers(3);
-
-		Game.game.players[0]=new Player();
-		Game.game.players[1]=new Player();
-		Game.game.players[1]=new Player();
-		Map map= HazardousMap.getInstance(5,5);
-		Map.map.setSize(5, 5);
-		
-		Position p = new Position();
-		p.x = 0;
-		p.y=0;
-		Map.tiles[p.x][p.y]='b';
-		assertEquals(Map.map.getTileType(p.x,p.y), 'b');
-		//assertEquals( 'b', HazardousMap.getTileType(Game.game.players[0].position.x, Game.game.players[0].position.y));
-
+		char c = HazardousMap.getTileType(Game.game.players[0].position.x, Game.game.players[0].position.y);
+		assertNotNull(c);
 	}
 	
 	@Test
@@ -68,6 +53,20 @@ public class HazardousMapTest {
 		    }
 		  }
 		return count;
+	}
+	
+	@Test
+	public void getInstanceTest(){
+		Map.map=null;
+		HazardousMap.getInstance(5,5);
+		
+		assertTrue(Map.map instanceof HazardousMap);
+		
+		Map.map = SafeMap.getInstance(5,5);
+		HazardousMap.getInstance(5,5);
+		assertTrue(Map.map instanceof HazardousMap);
+
+
 	}
 
 
