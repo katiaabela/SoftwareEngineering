@@ -24,7 +24,6 @@ public class MapCreator {
 	//default if no type is called
 	public Map generate(int x, int y){
 		return new SafeMapCreator().generate(x,y);
-		//return null;
 	}
 	
 	

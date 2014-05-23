@@ -5,7 +5,7 @@ import java.util.Random;
 public class SafeMap extends Map {
 	private char type = 's';
 	
-	public SafeMap(int x, int y){
+	private SafeMap(int x, int y){
 		super(x,y);
 	}
 	

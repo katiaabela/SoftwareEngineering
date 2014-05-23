@@ -29,7 +29,7 @@ public class HazardousMap extends Map {
 		int randomCol = r.nextInt(size);
 		tiles[randomRow][randomCol] = 'c';
 		int randomRowBlue, randomColumnBlue, randomNumberOfBlueTiles;
-		
+		 
 		int min = (int)(((size*size)-1)*0.25);
 		int max = (int)(((size*size)-1)*0.35);
 		randomNumberOfBlueTiles = r.nextInt(max)+min;
