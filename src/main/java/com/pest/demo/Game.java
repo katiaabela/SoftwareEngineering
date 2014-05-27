@@ -335,7 +335,7 @@ public class Game {
 			fWriter = new FileWriter("map_player_"+n+".html");	
 			writer = new BufferedWriter(fWriter);
 
-			code+="<html>\n<head>\n<title>HTML Table for Player</title>\n</head>\n</body>\n<table border=\"5\" style=\"width:100%; height:100%\">\n";
+			code+="<html>\n<head>\n<title>HTML Table for Player</title>\n</head>\n</body>\n<table border=\"5\" style=\"width:100%; height:100%; table-layout:fixed;\">\n";
 
 
 			for(int i=0; i<mapSize;i++){
